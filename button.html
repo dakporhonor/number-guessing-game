@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Button Press</title>
+
+    <style>
+      html {
+        font-family: 'Times New Roman', Times, serif;
+      }
+      
+   button{
+     color: cyan;
+     width: 50%;
+     height: 40px;
+     background-color: black;
+     text-justify: distribute;
+     border: 3px solid rgb(184, 255, 71);
+     border-radius: 5px;
+     text-shadow: 1px, 1px, 3px goldenrod;
+   }
+    </style>
+  </head>
+
+  <body>
+    <button>press me!</button>
+  <script>  
+    button = document.querySelector('button');
+    button.onclick = function() {
+    let name = prompt('What is your name?');
+    alert('Hello ' + name.toUpperCase() + '!, nice to see you.');
+  }
+</script>
+  </body>
+</html>
